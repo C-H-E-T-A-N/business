@@ -3,10 +3,9 @@ import React from "react"
 const Page01 = () => {
   return (
     <div>
-      <div
-        className="card text-white bg-secondary mb-3"
-        style="max-width: 18rem;"
-      >
+      <div className="card text-white bg-secondary mb-3" style={{
+        maxWidth: '18rem',
+        }}>
         <div className="card-header">Header</div>
         <div className="card-body">
           <h5 className="card-title">Secondary card title</h5>
