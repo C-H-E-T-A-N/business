@@ -1,12 +1,14 @@
-
 import './App.css';
-import Page01 from './components/Page01';
 import NavBar from './components/NavBar';
+import Login from './components/Login';
+import Page01 from './components/Page01';
+
 function App() {
   return (
     <>
     <NavBar/>
     <Page01/>
+    {/* <Login/> */}
     </>
   );
 }
