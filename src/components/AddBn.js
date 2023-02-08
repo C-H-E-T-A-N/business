@@ -44,7 +44,7 @@ const AddBn = () => {
             </div>
           </div>
         </div>
-        <div className="col-sm">
+        <div className="col-sm mb-3">
           <div
             className="card h-100"
             style={{
