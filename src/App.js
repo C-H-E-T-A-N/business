@@ -1,12 +1,13 @@
 import './App.css'
 import NavBar from './components/NavBar';
-import Page01 from './components/Page01';
+import Page01 from './components/AddBn';
+import AddBn from './components/AddBn';
 
 function App() {
   return (
     <>
     <NavBar/>
-    <Page01/>
+    <AddBn/>
      </>
   );
 }
