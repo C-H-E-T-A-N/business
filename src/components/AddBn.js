@@ -2,8 +2,11 @@ import React from "react";
 
 const AddBn = () => {
   return (
-    <div className="container" >
-      <div className="row text-center position-absolute top-50 start-50 translate-middle" style={{marginTop:"2rem",}}>
+    <div className="container">
+      <div
+        className="row text-center position-absolute top-50 start-50 translate-middle"
+        style={{ marginTop: "2rem" }}
+      >
         <div className="col-sm mb-3">
           <div
             className="card h-100 "
@@ -22,7 +25,6 @@ const AddBn = () => {
               >
                 ADD BUSINESS
               </h6>
-              {/* <p className="card-text">Tap to add new business.</p> */}
               <a
                 href="/"
                 className="btn btn-primary"
@@ -53,7 +55,6 @@ const AddBn = () => {
               >
                 EXISTING BUSINESS
               </h6>
-              {/* <p className="card-text">Tap to edit business.</p> */}
               <a
                 href="/"
                 className="btn btn-primary"
