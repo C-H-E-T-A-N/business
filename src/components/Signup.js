@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 
 export default function Signup() {
   return (
@@ -15,10 +16,10 @@ export default function Signup() {
         <label for="exampleInputPassword1" className="form-label">Password</label>
         <input type="password" className="form-control" id="exampleInputPassword1"/>
       </div>  
-      <button type="submit" className="btn btn-primary d-grid gap-2 col-12 mx-auto" style={{marginTop: '30px'}}>Login</button>
+      <button type="submit" className="btn btn-primary d-grid gap-2 col-12 mx-auto" style={{marginTop: '30px'}}>SignUp</button>
     </form>  
     </div>
-        <div id="newEmailSetUp" className="form-text mx-3">Need an accout? <a href="/">Sign up</a> </div>
+        <div id="newEmailSetUp" className="form-text mx-3">Already have an accout? <Link to="/Login">Login</Link> </div>
     </div>
         </>
   )

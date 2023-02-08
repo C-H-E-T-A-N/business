@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Login() {
   return (
@@ -18,7 +19,7 @@ export default function Login() {
       <button type="submit" className="btn btn-primary d-grid gap-2 col-12 mx-auto" style={{marginTop: '30px'}}>Login</button>
     </form>  
     </div>
-        <div id="newEmailSetUp" className="form-text mx-3">Need an accout? <a href="/">Sign up</a> </div>
+        <div id="newEmailSetUp" className="form-text mx-3">Need an accout? <Link to="/Signup">Sign up</Link> </div>
     </div>
     </>
   );
