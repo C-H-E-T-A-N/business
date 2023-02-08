@@ -2,7 +2,7 @@ import React from 'react'
 import logo from './logo.png';
 const NavBar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav className="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
     <div className="container-fluid">
       <a className="navbar-brand" href="/"><img src={logo} width="70" height="30" className="d-inline-block align-top" alt=""/></a>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
