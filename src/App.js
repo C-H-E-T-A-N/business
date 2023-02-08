@@ -1,6 +1,6 @@
-import './App.css';
-import Login from './components/Login';
+import './App.css'
 import NavBar from './components/NavBar';
+import AddBn from './components/AddBn';
 import Signup from './components/Signup';
 import {
   BrowserRouter,
@@ -12,6 +12,8 @@ function App() {
   return (
     <>
     <NavBar/>
+    <AddBn/>
+     </>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Login/>} />
