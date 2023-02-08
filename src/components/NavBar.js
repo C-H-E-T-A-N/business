@@ -1,5 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import logo from './logo.png';
+
 const NavBar = () => {
   return (
     <nav className="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
@@ -10,9 +12,9 @@ const NavBar = () => {
       </button>
       <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div className="navbar-nav">
-          <a className="nav-link active" aria-current="page" href="/">Home</a>
-          <a className="nav-link" href="/">Features</a>
-          <a className="nav-link" href="/">Pricing</a>
+          <Link className="nav-link active" aria-current="page" to="/Login">Home</Link>
+          {/* <a className="nav-link" href="/">Features</a>
+          <a className="nav-link" href="/">Pricing</a> */}
         </div>
       </div>
     </div>
