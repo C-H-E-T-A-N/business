@@ -3,17 +3,8 @@ import React from "react";
 const AddBn = () => {
   return (
     <div className="container" >
-      <div className="row text-center  position-absolute top-50 start-50 translate-middle" style={{
-      marginTop:"2rem",
-    }}>
-        <div
-          className="col-sm mb-3"
-          style={
-            {
-              // marginBottom:"1rem",
-            }
-          }
-        >
+      <div className="row text-center position-absolute top-50 start-50 translate-middle" style={{marginTop:"2rem",}}>
+        <div className="col-sm mb-3">
           <div
             className="card h-100 "
             style={{
@@ -44,7 +35,7 @@ const AddBn = () => {
             </div>
           </div>
         </div>
-        <div className="col-sm">
+        <div className="col-sm mb-3">
           <div
             className="card h-100"
             style={{
