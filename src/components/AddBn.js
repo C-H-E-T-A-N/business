@@ -1,72 +1,30 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const AddBn = () => {
   return (
     <div className="container">
-      <div
-        className="row text-center position-absolute top-50 start-50 translate-middle"
-        style={{ marginTop: "2rem" }}
-      >
+      <div className="row text-center position-absolute top-50 start-50 translate-middle" style={{ marginTop: "2rem" }}>
         <div className="col-sm mb-3">
-          <div
-            className="card h-100 "
-            style={{
-              width: "15rem",
-              height: "15rem",
-            }}
-          >
+          <Link to="/AddNewBnDet" style={{textDecoration: 'none', color: 'black'}}>
+            <div className="card mx-auto h-100" style={{width: "15rem", height: "15rem"}}>
             <div className="card-body">
-              <h6
-                className="card-title"
-                style={{
-                  marginTop: "6rem",
-                  marginBottom: "3rem",
-                }}
-              >
-                ADD BUSINESS
-              </h6>
-              <a
-                href="/"
-                className="btn btn-primary"
-                style={{
-                  marginBottom: "3rem",
-                }}
-              >
-                Click Here
-              </a>
+              <h4 className="card-title" style={{margin:'3rem 3rem'}}>ADD BUSINESS</h4>
             </div>
           </div>
+          </Link>
         </div>
         <div className="col-sm mb-3">
-          <div
-            className="card h-100"
-            style={{
-              width: "15rem",
-              height: "15rem",
-            }}
-          >
+        <Link to="/ExiBn" style={{textDecoration: 'none', color: 'black'}}>
+          <div className="card mx-auto h-100" style={{width: "15rem", height: "15rem"}}>
             <div className="card-body">
-              <h6
-                className="card-title text-break"
-                style={{
-                  marginTop: "6rem",
-                  marginBottom: "3rem",
-                }}
-              >
+              <h4 className="card-title" style={{margin:'3rem 3rem'}}>
                 EXISTING BUSINESS
-              </h6>
-              <a
-                href="/"
-                className="btn btn-primary"
-                style={{
-                  marginBottom: "3rem",
-                }}
-              >
-                Click Here
-              </a>
+              </h4>
             </div>
           </div>
-        </div>
+        </Link>
+      </div>
       </div>
     </div>
   );
