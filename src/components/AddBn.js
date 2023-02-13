@@ -1,15 +1,15 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const AddBn = () => {
   return (
-    <div className="container">
+    <div className="container mx-auto">
       <div
-        className="row text-center position-absolute top-50 start-50 translate-middle"
+        className="row text-center mx-auto position-absolute top-50 start-50 translate-middle"
         style={{ marginTop: "2rem" }}
       >
         <div className="col-sm mb-3">
           <div
-            className="card h-100 "
+            className="card h-100 mx-auto "
             style={{
               width: "15rem",
               height: "15rem",
@@ -39,7 +39,7 @@ const AddBn = () => {
         </div>
         <div className="col-sm mb-3">
           <div
-            className="card h-100"
+            className="card h-100 mx-auto"
             style={{
               width: "15rem",
               height: "15rem",
@@ -55,15 +55,22 @@ const AddBn = () => {
               >
                 EXISTING BUSINESS
               </h6>
-              <a
-                href="/"
+              <div
+                
                 className="btn btn-primary"
                 style={{
                   marginBottom: "3rem",
+                  textDecoration: 'none', 
+                  color: 'white'
                 }}
               >
+                <Link to="/ExiBnDt"
+                style={{textDecoration: 'none', color: 'white'}}
+                >
                 Click Here
-              </a>
+                </Link>
+
+              </div>
             </div>
           </div>
         </div>
