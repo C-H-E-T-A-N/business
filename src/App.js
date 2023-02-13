@@ -10,6 +10,8 @@ import {
   Routes,
   Route
 } from "react-router-dom";
+import ExiBn from './components/ExiBn';
+import AddNewBnDet from './components/AddNewBnDet';
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
         <Route path="/Login" element={<Login/>} />
         <Route path="/SignUp" element={<Signup/>} />
         <Route path='/AddBn' element={<AddBn/>}/>
+        <Route path='/ExiBn' element={<ExiBn/>}/>
+        <Route path='/AddNewBnDet' element={<AddNewBnDet/>}/>
       </Routes>
     </BrowserRouter>
     </>
