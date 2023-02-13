@@ -1,7 +1,6 @@
 import  React, { useState , useEffect } from 'react'
 
 export const DateTime = () => {
-
     var [date,setDate] = useState(new Date());
     
     useEffect(() => {
@@ -9,16 +8,14 @@ export const DateTime = () => {
         return function cleanup() {
             clearInterval(timer)
         }
-    
     });
 
     return(
-        <div>
+        <>
             {/* <p> Time : {date.toLocaleTimeString()}</p> */}
-            <p> Date : {date.toLocaleDateString()}</p>
-
-        </div>
+        Date : {date.toLocaleDateString()}
+        </>
     )
 }
 
-export default DateTime
+export default DateTime;
