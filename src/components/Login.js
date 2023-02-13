@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import AddBn from "./AddBn";
+// import AddBn from "./AddBn";
 
 export default function Login() {
   return (
@@ -18,7 +18,7 @@ export default function Login() {
         <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
         <input type="password" className="form-control" id="exampleInputPassword1"/>
       </div>  
-      <div className="btn btn-primary d-grid gap-2 col-12 mx-auto" onClick={<AddBn/>} style={{marginTop: '30px'}}><Link to="/AddBn" style={{textDecoration: 'none', color: 'white'}}>Login</Link>
+      <div className="btn btn-primary d-grid gap-2 col-12 mx-auto"  style={{marginTop: '30px'}}><Link to="/AddBn" style={{textDecoration: 'none', color: 'white'}}>Login</Link>
 </div>
     </form>  
     </div>
