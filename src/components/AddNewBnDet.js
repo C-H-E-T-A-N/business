@@ -22,8 +22,9 @@ export default function AddNewBnDet() {
             <label htmlFor="exampleInputPhone1" className="form-label">Phone No.</label>
             <input type="number" className="form-control" id="exampleInputPhone1"/>
         </div>
-        <button type="submit" className="btn btn-primary btn-lg">Add</button>
-        <button type="submit" className="btn btn-primary btn-lg mx-5">Add Items</button>
+        <div className="my-3 d-grid gap-3 d-md-flex">
+        <button type="submit" className="btn btn-primary">Add</button>
+        </div>
         </form>
       </div>
     </div>
