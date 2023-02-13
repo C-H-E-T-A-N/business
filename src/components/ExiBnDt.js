@@ -4,64 +4,25 @@ import DateTime from "./DateTime";
 export default function ExiBnDt() {
   return (
     <>
-      <div
-        className="position-absolute"
-        style={{
-          right: "0.5rem",
-          top: "5rem",
-        }}
-      >
-        <DateTime />
-      </div>
-      <div>
-        <div
-          className="position-absolute card border-dark"
-          style={{
-            width: "18rem",
-            // margin: "2rem 0rem 0rem 2rem",
-            top: "5rem",
-            left: "1.5rem",
-            height: "15rem",
-          }}
-        >
-          <div className="card-body">
-            
-              <p> prop.Bname </p>
-              <p> prop.Id</p>
-              <p> prop.Adress </p>
-              <p> prop.Number </p>
-              <p> prop.Mail </p>
-            
-            
-          </div>
+    <div className="mx-4" style={{marginTop: '2rem'}}>
+        <div className="card border-dark card-body" style={{width: "18rem"}}>
+          <p> prop.Bname </p>
+          <p> prop.Id</p>
+          <p> prop.Adress </p>
+          <p> prop.Number </p>
+          <p> prop.Mail </p>
+          <p><DateTime /></p>
         </div>
-        
-        <div
-          className="container position-absolute"
-          style={{
-            // margin: "2rem 0rem 0rem 2rem",
-            width: "80rem",
-            top: "25rem",
-            left: "0.8rem",
-          }}
-        >
-          <form>
-          <div className="input-group">
-  <input type="text" className="form-control" placeholder="Recipient's username" aria-label="Recipient's username with two button addons"/>
-  <button className="btn btn-outline-secondary" type="button">Button</button>
-  <button className="btn btn-outline-secondary" type="button">Button</button>
-</div>
-          </form>
+        <div className="input-group" style={{marginTop: '2rem'}}>
+          <input type="text" className="form-control" placeholder="Item name" aria-label="Item Name"/>
+          <input type="number" className="form-control" placeholder="Quantity" aria-label="Quantity"/>
+          <button className="btn btn-outline-secondary btn-primary text-white" type="button">Remove</button>
         </div>
-        <div className="d-grid gap-2 d-md-flex justify-content-md-end position-absolute" style={{
-            right:"28.5rem",
-            top:"33rem",
-
-        }}>
-  <button className="btn btn-primary me-md-2" type="button">Add Item</button>
-  <button className="btn btn-primary" type="button">Generate Bill</button>
-</div>
-      </div>
+        <div className="my-3 d-grid gap-3 d-md-flex">
+        <button type="button" className="btn btn-primary">Add Item</button>
+        <button type="button" className="btn btn-primary">Generate Bill</button>
+        </div>
+    </div>
     </>
   );
 }
