@@ -14,8 +14,8 @@ import {
 function App() {
   return (
     <>
-    <NavBar/>
     <BrowserRouter>
+    <NavBar/>
     
       <Routes>
         <Route path="/" element={<Login/>} />
